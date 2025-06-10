@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X=UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Headings Creation</title>
+    <style>
+      /* Footer styles */
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8em;
+        margin-top: 2em;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .footer-item {
+        margin: 0;
+        line-height: 1;
+      }
+
+      .contact-info {
+        text-align: left;
+      }
+
+      .course-info {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Begin form content here -->
+    <form action="#" method="post">
+      <div>
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          minlength="2"
+          maxlength="30"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="lastname">Last Name:</label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          minlength="2"
+          maxlength="30"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="food">Food Preference:</label>
+        <select id="food" name="food" required>
+          <option value="">Select an option</option>
+          <option value="chicken">Chicken</option>
+          <option value="beef">Beef</option>
+          <option value="fish">Fish</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="allergies">Allergies (if any):</label><br />
+        <textarea id="allergies" name="allergies" rows="4" cols="40"></textarea>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Send Order" />
+      </div>
+    </form>
+    <!-- End form content -->
+    <footer class="footer">
+      <!-- This is my custom footer with my contact info and course info aligned left and right -->
+      <div class="footer-content">
+        <div class="contact-info">
+          <p class="footer-item">Shannon Murdock</p>
+          <p class="footer-item">he/him/his</p>
+          <p class="footer-item">253-237-6689</p>
+          <p class="footer-item">
+            <a
+              href="mailto:shannon.murdock@seattlecolleges.edu"
+              class="footer-item"
+              >shannon.murdock@seattlecolleges.edu</a
+            >
+          </p>
+          <p class="footer-item">
+            <a href="mailto:shannon@smurdock.com" class="footer-item"
+              >shannon@smurdock.com</a
+            >
+          </p>
+        </div>
+        <div class="course-info">
+          <p class="footer-item">Class: IT 112 - Web Programming w/ Python</p>
+          <p class="footer-item">Instructor: Monte Faison II</p>
+          <p class="footer-item">VS Code: HTML Forms Creation</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
