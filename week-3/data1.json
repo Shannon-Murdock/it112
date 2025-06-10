@@ -1,0 +1,14 @@
+{
+    "name": "Shannon Murdock",
+    "age": 51,
+    "city": "Seattle, WA",
+    "interests": [
+        "Writing",
+        "Graphic Art",
+        "Travel",
+        "Web Design",
+        "Baking",
+        "Kirigami"
+    ],
+    "is_student": true
+}
