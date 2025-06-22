@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <meta name="author" content="Shannon Murdock" />
+    <style>
+      /* Navigation Styles */
+      .nav {
+        color: black;
+        text-align: center;
+      }
+      /* Footer styles */
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8em;
+        margin-top: 2em;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .footer-item {
+        margin: 0;
+        line-height: 1;
+      }
+
+      .contact-info {
+        text-align: left;
+      }
+
+      .course-info {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Title of the page -->
+      <h1>About Page</h1>
+      <!-- Navigation -->
+      <h3 class="nav" id="#nav">
+        <a href="/">Home</a> | <a href="/about">About</a> |
+        <a href="/contact">Contact</a>
+      </h3>
+    </header>
+    <!-- Main section of the page's content -->
+    <main>
+      <p>
+        Welcome to our About Page. Here you can read about our company and
+        culture.
+      </p>
+    </main>
+    <footer class="footer">
+      <!-- This is my custom footer with my contact info and course info aligned left and right -->
+      <div class="footer-content">
+        <div class="contact-info">
+          <p class="footer-item">Shannon Murdock</p>
+          <p class="footer-item">he/him/his</p>
+          <p class="footer-item">253-237-6689</p>
+          <p class="footer-item">
+            <a
+              href="mailto:shannon.murdock@seattlecolleges.edu"
+              class="footer-item"
+              >shannon.murdock@seattlecolleges.edu</a
+            >
+          </p>
+          <p class="footer-item">
+            <a href="mailto:shannon@smurdock.com" class="footer-item"
+              >shannon@smurdock.com</a
+            >
+          </p>
+        </div>
+        <div class="course-info">
+          <p class="footer-item">Class: IT 112 - Web Programming w/ Python</p>
+          <p class="footer-item">Instructor: Monte Faison II</p>
+          <p class="footer-item">
+            Self-Assignment: Routing Web Page Templates in Flask with VS Code
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
