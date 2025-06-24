@@ -4,6 +4,7 @@
 
 /* Styles for the image container */
 #image-container {
+  display: none; /* Hide the image container initially */
   text-align: center; /* Center the image */
   margin: 20px 0; /* Add some space above and below the image */
 }
@@ -76,22 +77,40 @@
 }
 
 /* ID selector for buttons */
-#yes-button {
-  background-color: green;
+/* For disrespecting the Tigers, you get this! */
+#yes-button,
+#no-button {
+  background-color: green; /* Default background for YES button */
   color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, border 0.3s ease, transform 0.1s ease; /* Smooth transition */
 }
 
+/* Specific styles for the NO button */
 #no-button {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-weight: bold;
+  background-color: red; /* Default background for NO button */
+}
+
+/* Hover effect */
+#yes-button:hover {
+  background-color: gold; /* Change background color on hover for YES button */
+  outline: 2px solid purple; /* Add purple outline */
+}
+
+#no-button:hover {
+  background-color: purple; /* Change background color on hover for NO button */
+  outline: 2px solid gold; /* Add gold outline */
+}
+
+/* Active (clicked) effect */
+#yes-button:active,
+#no-button:active {
+  transform: scale(0.95); /* Scale down to simulate being pushed in */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Add inset shadow for depth */
 }
 
 /* Footer styles */
