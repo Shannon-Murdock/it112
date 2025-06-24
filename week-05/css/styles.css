@@ -1,0 +1,123 @@
+/* ==========================================================================
+   Shannon Murdock's custom styles
+   ========================================================================== */
+
+/* Styles for the image container */
+#image-container {
+  text-align: center; /* Center the image */
+  margin: 20px 0; /* Add some space above and below the image */
+}
+
+.team-image {
+  width: 400px; /* Set the width of the image */
+  max-width: 100%; /* Ensure it is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.jumbotron {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.container .jumbotron {
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+
+/* Crimson color for Alabama and Oklahoma */
+.crimson {
+  color: crimson;
+}
+
+/* Greenish color for Notre Dame and Miami */
+.green {
+  color: green;
+}
+
+/* Maize color for Michigan */
+.maize {
+  color: #ffcb05;
+}
+
+/* Red color for Ohio State, Southern California, and Nebraska */
+.red {
+  color: red;
+}
+
+/* Burnt Orange color for University of Texas */
+.burnt-orange {
+  color: #bf5700;
+}
+
+/* ID selector for buttons */
+#yes-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#no-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+  margin-top: 2em;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-item {
+  margin: 0;
+  line-height: 1;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.course-info {
+  text-align: right;
+}

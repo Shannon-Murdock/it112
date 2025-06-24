@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>CSS Class and ID Selectors</title>
+    <meta
+      name="description"
+      content="We are instructed to modify various attributes of an ordered list of individual teams from the instructor's list of favorite American College Football teams using CSS Classes and IDs."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>Monte's Top College Football Programs of All Time</h1>
+        <div id="image-container">
+          <img
+            id="team-image"
+            src=""
+            alt="College Football Team"
+            class="team-image"
+          />
+        </div>
+      </div>
+    </header>
+    <hr />
+    <main>
+      <ol>
+        <li class="crimson">Alabama</li>
+        <li class="green">Notre Dame</li>
+        <li class="maize">Michigan</li>
+        <li class="red">Ohio State</li>
+        <li class="crimson">Oklahoma</li>
+        <li class="red">Southern California</li>
+        <li class="burnt-orange">Texas</li>
+        <li class="green">Miami</li>
+        <li class="red">Nebraska</li>
+      </ol>
+
+      <!-- Buttons -->
+      <button id="yes-button">YES I AGREE</button>
+      <button id="no-button">NO I DON'T AGREE</button>
+
+      <hr />
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="contact-info">
+          <p class="footer-item">Shannon Murdock</p>
+          <p class="footer-item">he/him/his</p>
+          <p class="footer-item">253-237-6689</p>
+          <p class="footer-item">
+            <a
+              href="mailto:shannon.murdock@seattlecolleges.edu"
+              class="footer-item"
+              >shannon.murdock@seattlecolleges.edu</a
+            >
+          </p>
+          <p class="footer-item">
+            <a href="mailto:shannon@smurdock.com" class="footer-item"
+              >shannon@smurdock.com</a
+            >
+          </p>
+        </div>
+        <div class="course-info">
+          <p class="footer-item">IT 112 - Web Programming with Python</p>
+          <p class="footer-item">Monte Faison II</p>
+          <p class="footer-item">CSS Class and ID Selectors (10 points)</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Function to display image based on button clicked
+      document.getElementById("yes-button").onclick = function () {
+        document.getElementById("team-image").src = "./img/yes.webp"; // Path to yes image
+        document.getElementById("image-container").style.display = "block";
+      };
+
+      document.getElementById("no-button").onclick = function () {
+        document.getElementById("team-image").src = "./img/no.gif"; // Path to no image
+        document.getElementById("image-container").style.display = "block";
+      };
+    </script>
+  </body>
+</html>
