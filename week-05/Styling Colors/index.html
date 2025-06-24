@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self-Assignment VS Code: CSS Styling Colors</title>
+    <meta
+      name="description"
+      content="We are to change the colors of an HTML page using CSS."
+    />
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Make This Text Green</h1>
+    <h2>Make This Text Purple</h2>
+    <p class="pink-background">
+      CHANGE THIS TEXT TO PINK The Legend of Zelda is a high fantasy
+      action-adventure video game franchise created by Japanese game designers
+      Shigeru Miyamoto and Takashi Tezuka. It is primarily developed and
+      published by Nintendo, although some portable installments and re-releases
+      have been outsourced to Capcom, Vanpool, and Grezzo. The gameplay
+      incorporates action-adventure and elements of action RPG games.
+    </p>
+    <button class="blue-button" onclick="showMessage()">
+      Make Me Blue With White Text
+    </button>
+    <p id="message" style="display: none">
+      If I'd had more time, this ugly page would be more fabulous.
+    </p>
+
+    <hr />
+    <footer class="footer">
+      <!-- This is my custom footer with my contact info and course info aligned left and right -->
+      <div class="footer-content">
+        <div class="contact-info">
+          <p class="footer-item">Shannon Murdock</p>
+          <p class="footer-item">he/him/his</p>
+          <p class="footer-item">253-237-6689</p>
+          <p class="footer-item">
+            <a
+              href="mailto:shannon.murdock@seattlecolleges.edu"
+              class="footer-item"
+              >shannon.murdock@seattlecolleges.edu</a
+            >
+          </p>
+          <p class="footer-item">
+            <a href="mailto:shannon@smurdock.com" class="footer-item"
+              >shannon@smurdock.com</a
+            >
+          </p>
+        </div>
+        <div class="course-info">
+          <p class="footer-item">IT 112 - Web Programming with Python</p>
+          <p class="footer-item">Monte Faison II</p>
+          <p class="footer-item">CSS Styling Colors (10 points)</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function showMessage() {
+        document.getElementById("message").style.display = "block"; // Show the paragraph
+      }
+    </script>
+  </body>
+</html>
