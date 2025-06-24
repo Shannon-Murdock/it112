@@ -11,6 +11,14 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Initialize database
 db = SQLAlchemy(app)
 
+class Book(db.Model):
+    id = db.Column(db.Integer, primary_key = True) #primary key column, automatically generated IDs
+    title = db.Column(db.String(80), index = True, unique = True) # book title
+    author_name = db.Column(db.String(50), index=True, nullable=True) # author full name
+    author_surname = db.Column(db.String(50), index=True, nullable=True) # author last name
+    month = db.Column(db.String(20), index = True, unique = False) #the month of book suggestion
+    year = db.Column(db.Integer, index = True, unique = False) #the year of book suggestion
+
 # Define User model
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)

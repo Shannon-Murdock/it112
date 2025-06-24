@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+.letter-container {
+  background-color: white; /* White background for the letter */
+  padding: 20px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2,
+h3 {
+  color: #333; /* Darker color for headings */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Remove space between borders */
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc; /* Light gray border for table cells */
+  padding: 8px;
+  text-align: left; /* Align text to the left */
+}
+
+th {
+  background-color: #f0f0f0; /* Light gray background for header */
+}
+
+strong {
+  color: #000; /* Black color for strong text */
+}
+
+.signature {
+  width: 200px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 10px; /* Space above the signature */
+}
